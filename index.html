@@ -84,6 +84,18 @@
   .feature strong { display: block; margin-bottom: 6px; color: var(--pink); }
   ul { padding-left: 20px; margin: 12px 0; }
   li { margin-bottom: 8px; }
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .contact-links a {
+    color: var(--pink);
+    text-decoration: none;
+    font-size: 1.05rem;
+  }
+  .contact-links a:hover { text-decoration: underline; }
   footer {
     text-align: center;
     padding: 40px 20px;
@@ -149,6 +161,16 @@
         <div class="feature"><strong>Monitoring</strong>Ongoing seller risk tracking with reserve flexibility.</div>
         <div class="feature"><strong>Reporting</strong>Transparent settlement and dispute visibility for partners.</div>
       </div>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>For investor discussions, bank partnerships, or platform integrations:</p>
+      <div class="contact-links">
+        <a href="mailto:solutions@nightshift.com">solutions@nightshift.com</a>
+        <a href="https://github.com/kyronaextra/nightshift-pay">GitHub Repository</a>
+      </div>
+      <p style="margin-top: 20px; color: var(--muted); font-size: 0.95rem;">NightShift Collective · United States</p>
     </div>
   </div>
 
