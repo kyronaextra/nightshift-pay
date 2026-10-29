@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NightShift Pay — Investor Overview</title>
+<style>
+  :root {
+    --bg: #07070b;
+    --card: #101018;
+    --border: #252532;
+    --pink: #e8a4b8;
+    --green: #7dcea0;
+    --text: #f4f4f8;
+    --muted: #9a9aaa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+  .hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: radial-gradient(ellipse at top, #15151f 0%, transparent 60%);
+  }
+  .logo {
+    width: 180px;
+    height: auto;
+    margin: 0 auto 32px;
+    display: block;
+    filter: drop-shadow(0 0 40px rgba(232, 164, 184, 0.2));
+  }
+  .eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+  .tagline {
+    font-size: 1.3rem;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 32px;
+    font-weight: 300;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px 80px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 32px;
+  }
+  .card h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  .card p { margin-bottom: 16px; color: var(--text); }
+  .card p:last-child { margin-bottom: 0; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+  }
+  .feature {
+    background: #0e0e14;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .feature strong { display: block; margin-bottom: 6px; color: var(--pink); }
+  ul { padding-left: 20px; margin: 12px 0; }
+  li { margin-bottom: 8px; }
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <img src="nightshift-logo.jpg" alt="NightShift Collective" class="logo">
+    <div class="eyebrow">Payment Infrastructure</div>
+    <h1>NightShift Pay</h1>
+    <p class="tagline">Durable payment infrastructure for legal businesses and independent creators. Built for bank and investor partnerships.</p>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>The Opportunity</h2>
+      <p>NightShift Pay is a US-based fintech platform in development that provides payment infrastructure for legal businesses and independent creators. We partner with banks and licensed institutions to enable approved card acquiring, NPP/PayTo access, and fast direct payouts (including AUD) to verified recipients.</p>
+      <p>We do not hold creator or merchant funds. Settlement occurs through our banking partners, with a focus on clear licensing, appropriate reserves, reliable settlement speeds, and robust API integration. Our goal is to build durable, compliant payment pathways for growing segments that have historically had limited access to modern acquiring and local payout options.</p>
+    </div>
+
+    <div class="card">
+      <h2>Business Model</h2>
+      <div class="grid">
+        <div class="feature">
+          <strong>For Banks & Acquirers</strong>
+          Approved acquiring sponsorship, controlled risk, and access to growing legal segments with strong verification and monitoring.
+        </div>
+        <div class="feature">
+          <strong>For Creators & Businesses</strong>
+          Fast direct payouts, clear fees, and tools that reduce dispute friction without holding funds.
+        </div>
+        <div class="feature">
+          <strong>Revenue</strong>
+          Platform fees on processed volume plus optional software tools. No fund holding.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Risk Controls</h2>
+      <p>Layered controls designed to reduce chargeback fraud and protect acquiring partners:</p>
+      <ul>
+        <li>Seller verification before payouts (identity, business, and bank account ownership)</li>
+        <li>Delivery and access logging for digital goods</li>
+        <li>Real-time monitoring of dispute rates and velocity</li>
+        <li>Targeted reserves on individual sellers when risk rises</li>
+        <li>Clear billing descriptors</li>
+        <li>Chargeback alerts (Ethoca/Verifi) and representment support</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Planned System</h2>
+      <div class="grid">
+        <div class="feature"><strong>Verified Onboarding</strong>Identity and business checks before any payout.</div>
+        <div class="feature"><strong>Direct Settlement</strong>Funds move through banking partners. We do not hold balances.</div>
+        <div class="feature"><strong>NPP / PayTo</strong>Local Australian rails for fast AUD payouts.</div>
+        <div class="feature"><strong>API First</strong>Clean integration for platforms and merchants.</div>
+        <div class="feature"><strong>Monitoring</strong>Ongoing seller risk tracking with reserve flexibility.</div>
+        <div class="feature"><strong>Reporting</strong>Transparent settlement and dispute visibility for partners.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    NightShift Collective · United States · In development · For investor and partner discussions
+  </footer>
+</body>
+</html>
